@@ -1,43 +1,119 @@
-# 🧪 ChemCompute Digital Lab Assistant
+### Image Classification Model 🧪 ChemCompute Edition
 
-ChemCompute is an interactive, Streamlit-powered laboratory assistant designed for science students. This tool leverages Python's Object-Oriented Programming (OOP) and Regular Expressions (Regex) to help students explore chemical properties, calculate molecular metrics, and predict reaction outcomes.
 
-## 🚀 Key Features
+This repository contains a **Digital Lab Assistant** built with Streamlit. It follows a structured development lifecycle to help students explore chemical properties and reactions through code.
 
-* **🔎 Element Search:** Explore a database of elements. [cite_start]The system uses OOP inheritance to categorize elements into **Metals**, **Non-Metals**, and **Noble Gases**, providing specific physical properties for each[cite: 80, 96, 99, 100].
-* **⚛️ Molar Mass Calculator:** Enter chemical formulas (like `H2O` or `NaCl`). [cite_start]The application uses a Regex-based parser to count atoms and calculate total molar mass based on the element database[cite: 140, 142, 171].
-* [cite_start]**🔗 Bond Predictor:** Input two element symbols to determine if they form an **Ionic** or **Covalent** bond based on their electronegativity difference[cite: 189, 196, 197].
-* [cite_start]**🔥 Reaction Predictor:** Identify reaction types such as **Synthesis**, **Decomposition**, and **Combustion** based on simplified chemical notations[cite: 212, 218].
+### 📌 Project Overview
+The **ChemCompute Lab Assistant** is an educational tool that combines Chemistry with Python programming. It uses Object-Oriented Programming (OOP) to model chemical elements and Regular Expressions (Regex) to parse molecular formulas.
 
-## 🛠️ Technical Implementation
 
-* [cite_start]**Object-Oriented Programming:** Implements encapsulation (using private attributes for atomic numbers) and inheritance (specific `properties()` methods for different element groups)[cite: 87, 96].
-* [cite_start]**Regular Expressions (Regex):** Utilizes the pattern `r'([A-Z][a-z]?)(\d*)'` to accurately parse element symbols and their respective counts from a formula string[cite: 142].
-* **Streamlit Framework:** Provides a clean, sidebar-driven user interface for real-time calculation and data visualization.
+---
 
-## 📦 Installation
+### 🔄 Project Development Cycle
+This project was developed following a step-by-step Software Development Life Cycle (SDLC):
 
-1.  **Clone the Repository:**
-    ```bash
-    git clone [https://github.com/YOUR_USERNAME/ChemCompute.git](https://github.com/YOUR_USERNAME/ChemCompute.git)
-    cd ChemCompute
-    ```
 
-2.  **Install Dependencies:**
-    ```bash
-    pip install -r requirements.txt
-    ```
+1. **Requirement Analysis:**
 
-3.  **Run the Application:**
-    ```bash
-    streamlit run app.py
-    ```
+  Planning the conversion of core chemistry concepts (elements, molar mass, bonding) into a digital tool for 9th-grade students.
+2.**Data Modeling:**
 
-## 🧪 Element Database
-The current system includes data for:
-* [cite_start]**Hydrogen (H):** Non-Metal, Mass 1.008 [cite: 3, 26-30]
-* [cite_start]**Oxygen (O):** Non-Metal, Mass 16.00 [cite: 4, 31-35]
-* [cite_start]**Sodium (Na):** Metal, Mass 22.99 [cite: 5, 36-40]
-* [cite_start]**Chlorine (Cl):** Non-Metal, Mass 35.45 [cite: 6, 41-45]
-* [cite_start]**Carbon (C):** Non-Metal, Mass 12.01 [cite: 7, 46-50]
-* [cite_start]**Neon (Ne):** Noble Gas, Mass 20.18 [cite: 77-78, 132-137]
+Creating a structured database of elements including atomic mass and electronegativity.
+
+3.**Core Logic Development (OOP):
+   
+   ** Designing the `Element` parent class and `Metal`, `NonMetal`, and `NobleGas` child classes to demonstrate property inheritance.
+
+   
+4. **Function Engineering:**
+
+ Implementing a `formula_parser` using Regex to break down complex molecular strings into individual atom counts.
+
+
+7. **UI Integration:**
+
+ Building an interactive dashboard using the Streamlit framework, featuring a sidebar-driven navigation menu.
+
+
+6.**Testing & Validation:** 
+
+  Verifying the logic with various chemical formulas (e.g., H2O, NaCl) and predicting reaction types.
+
+
+7. **Deployment:**
+
+   Organizing the repository for cloud hosting (e.g., Streamlit Cloud or GitHub Pages).
+
+---
+
+### 🛠️ Tech Stack
+* **Language:** Python 3.x
+* **Web Framework:** Streamlit
+* **Pattern Matching:** Regular Expressions (re)
+* **Programming Paradigm:** Object-Oriented Programming (OOP)
+
+---
+
+
+### 🚀 Getting Started
+
+### 1. Clone the repository
+
+Bash
+
+
+git clone [https://github.com/AnzaKayani/ChemCompute.git](https://github.com/AnzaKayani/ChemCompute.git)
+cd ChemCompute
+
+
+### Install Dependencies :
+
+Bash
+
+pip install -r requirements.txt
+
+
+### Run the Application:
+Bash
+streamlit run app.py
+
+
+### 🧪 Database & Classes
+The project implements a hierarchy of chemical families:
+
+Parent Class: Element
+
+Child Classes: Metal, NonMetal, and NobleGas
+
+Included Elements: Hydrogen, Oxygen, Sodium, Chlorine, Carbon, and Neon
+
+
+### 📊 Results & Demonstration
+The following results were achieved during the testing phase of the ChemCompute project:
+
+### 1. Element Search Result
+* **Input:** Na
+* **Output:** Name: Sodium, Mass: 22.99, Group: Metal, Property: "Shiny and good conductor"
+
+### 2. Molar Mass Calculation
+* **Input:** C6H12O6 (Glucose)*
+* **Processing:** Regex identified 6 Carbon, 12 Hydrogen, and 6 Oxygen atoms.
+* **Result:** `Molar Mass = 180.18 g/mol`
+
+### 3. Bond Prediction
+* **Input:** `Na` + `Cl`
+* **Logic:** Electronegativity difference > 1.7
+* **Result:** `Ionic Bond`
+
+### 4. Reaction Classification
+* **Input:** `A + B`
+* **Result:** `Synthesis Reaction`
+
+
+
+### 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request or open an issue to improve the database or prediction algorithms.
+
+
+
