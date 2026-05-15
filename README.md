@@ -1,4 +1,6 @@
-### Image Classification Model 🧪 ChemCompute Edition
+### The Capstone Project
+
+  ### 🧪 Chem-Compute to the Digital Labs Assistant
 
 
 This repository contains a **Digital Lab Assistant** built with Streamlit. It follows a structured development lifecycle to help students explore chemical properties and type of reactions through code.
@@ -38,12 +40,12 @@ Designing the `Element` parent class and `Metal`, `NonMetal`, and `NobleGas` chi
 
 6.Testing & Validation:
 
-  Verifying the logic with various chemical formulas (e.g., H2O, NaCl) and predicting reaction types.
+ Verifying the logic with various chemical formulas (e.g., H2O, NaCl) and predicting reaction types.
 
 
 7. Deployment:
 
-   Organizing the repository for cloud hosting (e.g., Streamlit Cloud or GitHub Pages).
+ Organizing the repository for cloud hosting (e.g., Streamlit Cloud or GitHub Pages).
 
 ---
 
