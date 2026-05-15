@@ -66,8 +66,8 @@ Designing the `Element` parent class and `Metal`, `NonMetal`, and `NobleGas` chi
 Bash
 
 
-git clone [https://github.com/AnzaKayani/ChemCompute.git](https://github.com/AnzaKayani/ChemCompute.git)
-cd ChemCompute
+git clone [https://github.com/AnzaKayani/Chem-Compute-The-Digital-Lab-Assistant.git](https://github.com/AnzaKayani/Chem-Compute-The-Digital-Lab-Assistant.git)
+cd Chem-Compute-The-Digital-Lab-Assistant
 
 
 ### Install Dependencies :
